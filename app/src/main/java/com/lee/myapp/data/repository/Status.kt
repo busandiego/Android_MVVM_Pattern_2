@@ -1,10 +1,12 @@
 package com.lee.myapp.data.repository
 
 enum class Status {
-    RUNNING,
     SUCCESS,
+    RUNNING,
     FAILED
 }
+// https://developers.themoviedb.org/3
+// key: 320e3775e7cc9acdd43aeda6b028a4a3
 
 class NetworkState(val status: Status, val msg: String) {
 
