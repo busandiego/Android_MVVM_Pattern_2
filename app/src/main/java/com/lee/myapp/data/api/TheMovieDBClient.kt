@@ -39,7 +39,6 @@ object TheMovieDBClient {
             .connectTimeout(60, TimeUnit.SECONDS)
             .build()
 
-
         return Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl(BASE_URL)
