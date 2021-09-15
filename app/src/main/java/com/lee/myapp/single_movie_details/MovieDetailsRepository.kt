@@ -1,4 +1,4 @@
-package com.lee.myapp.view
+package com.lee.myapp.single_movie_details
 
 import androidx.lifecycle.LiveData
 import com.lee.myapp.data.api.TheMovieDBInterface

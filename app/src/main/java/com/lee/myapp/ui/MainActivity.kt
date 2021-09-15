@@ -1,4 +1,4 @@
- package com.lee.myapp.view
+ package com.lee.myapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

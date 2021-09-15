@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudyapp">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".ui.Main2Activity"
+            android:exported="true"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Androidstudyapp.NoActionBar" />
+        <activity
+            android:name="com.lee.myapp.single_movie_details.SingleMovie"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
