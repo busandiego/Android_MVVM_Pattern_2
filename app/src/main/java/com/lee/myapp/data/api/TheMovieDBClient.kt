@@ -47,7 +47,6 @@ object TheMovieDBClient {
             .build()
             .create(TheMovieDBInterface::class.java)
 
-
     }
 
 }

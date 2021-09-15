@@ -25,11 +25,13 @@ class MovieDetailsNetworkDataSource(
     val downloadedMovieDetailsResponse: LiveData<MovieDetails>
         get() = _downloadedMovieDetailsResponse
 
+    // 코틀린 get()
+    // https://codechacha.com/ko/kotlin-property/
+
 
     fun fetchMovieDetails(movieId: Int) {
 
         _networkState.postValue(NetworkState.LOADING)
-
 
         try {
             compositeDisposable.add(
@@ -48,12 +50,9 @@ class MovieDetailsNetworkDataSource(
             )
 
         }
-
         catch (e: Exception){
             Log.e("MovieDetailsDataSource",e.message.toString())
         }
-
-
     }
 
 }
