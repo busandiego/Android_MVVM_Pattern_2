@@ -10,7 +10,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-
+/// 잘못된 주소로 요청했음
 /*const val API_KEY = "320e3775e7cc9acdd43aeda6b028a4a3"
 const val BASE_URL = "https://developers.themoviedb.org/3/"*/
 
@@ -18,12 +18,8 @@ const val API_KEY = "6e63c2317fbe963d76c3bdc2b785f6d1"
 const val BASE_URL = "https://api.themoviedb.org/3/"
 
 // 기본URL: https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>
-// https://developers.themoviedb.org/3
-// key: 320e3775e7cc9acdd43aeda6b028a4a3
 // https://api.themoviedb.org/3/movie/popular?api_key=320e3775e7cc9acdd43aeda6b028a4a3&language=en-US&page=1
-// https://developers.themoviedb.org/3/299534?api_key=320e3775e7cc9acdd43aeda6b028a4a3
 // https://api.themoviedb.org/3/movie/299534?api_key=320e3775e7cc9acdd43aeda6b028a4a3
-
 
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
@@ -62,13 +58,13 @@ object TheMovieDBClient {
             .connectTimeout(60, TimeUnit.SECONDS)
             .build()
 
-        val gson = GsonBuilder().setLenient().create()
+        /*val gson = GsonBuilder().setLenient().create()*/
 
         return Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl(BASE_URL)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create(gson))
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(TheMovieDBInterface::class.java)
 
