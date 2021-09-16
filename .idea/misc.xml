@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android project/androidstudyapp/app/src/main/res/layout/activity_main.xml" value="0.16388044579533942" />
+        <entry key="..\:/android project/androidstudyapp/app/src/main/res/layout/activity_single_movie.xml" value="0.19270833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/lee/myapp/ui/FirstFragment.kt" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/lee/myapp/ui/Main2Activity.kt" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/lee/myapp/ui/SecondFragment.kt" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

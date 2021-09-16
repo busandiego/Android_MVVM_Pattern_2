@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit
 const val API_KEY = "320e3775e7cc9acdd43aeda6b028a4a3"
 const val BASE_URL = "https://developers.themoviedb.org/3/"
 
+// 기본URL: https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>
+
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
 object TheMovieDBClient {
