@@ -3,7 +3,6 @@ package com.lee.myapp.data.vo
 import com.google.gson.annotations.SerializedName
 
 data class MovieDetails(
-
     val budget: Int,
     val id: Int,
     val overview: String,

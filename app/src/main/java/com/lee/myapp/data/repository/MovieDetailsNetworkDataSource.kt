@@ -41,17 +41,21 @@ class MovieDetailsNetworkDataSource(
                         {
                             _downloadedMovieDetailsResponse.postValue(it)
                             _networkState.postValue(NetworkState.LOADED)
+                            Log.d(TAG, "fetchMovieDetails: >>>>>>>>>>>> $it")
+                            Log.d("MovieDetailsDataSource", "fetchMovieDetails success>>>>>>>>>>>>>>>")
                         },
                         {
                             _networkState.postValue(NetworkState.ERROR)
-                            Log.e("MovieDetailsDataSource", it.message.toString())
+                            Log.e("MovieDetailsDataSource", "fetchMovieDetails error>>>>>>>>>>>>>>>" + it.cause)
+                            Log.e("MovieDetailsDataSource", "fetchMovieDetails error>>>>>>>>>>>>>>>" + it.stackTrace )
+                            Log.e("MovieDetailsDataSource", "fetchMovieDetails error>>>>>>>>>>>>>>>" + it.message.toString())
                         }
                     )
             )
 
         }
         catch (e: Exception){
-            Log.e("MovieDetailsDataSource",e.message.toString())
+            Log.e("MovieDetailsDataSource","catch >>>>>>>>>>>>" + e.message.toString())
         }
     }
 

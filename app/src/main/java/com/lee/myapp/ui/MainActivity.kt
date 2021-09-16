@@ -15,7 +15,7 @@ import com.lee.myapp.ui.single_movie_details.SingleMovie
         findViewById<Button>(R.id.btn).setOnClickListener {
             val intent = Intent(this, SingleMovie::class.java)
             intent.putExtra("id", 299534)
-            startActivity(intent)
+            this.startActivity(intent)
 
         }
     }
