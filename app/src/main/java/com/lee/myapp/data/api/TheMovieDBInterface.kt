@@ -1,9 +1,11 @@
 package com.lee.myapp.data.api
 
 import com.lee.myapp.data.vo.MovieDetails
+import com.lee.myapp.data.vo.MovieResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface TheMovieDBInterface {
 
@@ -22,6 +24,14 @@ interface TheMovieDBInterface {
     // observable data stream
 
     // Single 이란.
+
+
+    // 파라미터가 필요함 왜냐하면 페이지 번호를 알아야하기 때문이다.
+    @GET("movies/popular")
+    fun getPopularMovie(@Query("page") page: Int): Single<MovieResponse>
+
+
+
 
 
 }
