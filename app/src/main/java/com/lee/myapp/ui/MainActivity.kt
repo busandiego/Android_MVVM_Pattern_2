@@ -12,11 +12,14 @@ import com.lee.myapp.ui.single_movie_details.SingleMovie
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+/*
         findViewById<Button>(R.id.btn).setOnClickListener {
             val intent = Intent(this, SingleMovie::class.java)
             intent.putExtra("id", 299534)
             this.startActivity(intent)
 
         }
+*/
     }
 }
