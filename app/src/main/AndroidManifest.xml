@@ -14,7 +14,7 @@
         <activity android:name=".ui.single_movie_details.SingleMovie">
         </activity>
         <activity
-            android:name="com.lee.myapp.ui.MainActivity"
+            android:name="com.lee.myapp.ui.popular_movie.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

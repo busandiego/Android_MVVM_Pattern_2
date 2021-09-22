@@ -1,6 +1,5 @@
 package com.lee.myapp.data.repository
 
-import android.animation.PropertyValuesHolder
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
@@ -18,7 +17,7 @@ class MovieDataSource
 
     private var page = FIRST_PAGE
 
-    private val networkState: MutableLiveData<NetworkState> = MutableLiveData()
+    val networkState: MutableLiveData<NetworkState> = MutableLiveData()
 
     override fun loadInitial(
         params: LoadInitialParams<Int>,

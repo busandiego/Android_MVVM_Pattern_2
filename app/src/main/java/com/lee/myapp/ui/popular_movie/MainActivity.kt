@@ -1,4 +1,4 @@
- package com.lee.myapp.ui
+ package com.lee.myapp.ui.popular_movie
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
