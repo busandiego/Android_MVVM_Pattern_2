@@ -53,7 +53,7 @@ class SingleMovie: AppCompatActivity() {
         // movie
         findViewById<TextView>(R.id.movie_title).text = it.title
         findViewById<TextView>(R.id.movie_tagline).text = it.tagline
-        findViewById<TextView>(R.id.movie_release_date).text = it.tagline
+        findViewById<TextView>(R.id.movie_release_date).text = it.releaseDate
         findViewById<TextView>(R.id.movie_rating).text = it.rating.toString()
         findViewById<TextView>(R.id.movie_runtime).text = it.runtime.toString() + "minutes"
         findViewById<TextView>(R.id.movie_overview).text = it.overview

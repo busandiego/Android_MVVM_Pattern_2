@@ -17,5 +17,17 @@ F
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+h
+8app/src/main/java/com/lee/myapp/data/vo/MovieResponse.kt,7\b\7b9321d24e55e416059a12627447ef8bc4eb3791
+
+Qapp/src/main/java/com/lee/myapp/ui/single_movie_details/MovieDetailsRepository.kt,f\3\f3cc5e50a3572cd6ec5a9f54af070600c351d263
+€
+Papp/src/main/java/com/lee/myapp/data/repository/MovieDetailsNetworkDataSource.kt,c\4\c4a0018109999a827e8f2df082dcaf339e630a92
+i
+9app/src/main/java/com/lee/myapp/data/repository/Status.kt,4\5\45223c037ed81642541f01f8a08591fab9bc30f2
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+
+Oapp/src/main/java/com/lee/myapp/ui/single_movie_details/SingleMovieViewModel.kt,4\e\4e42709a81bef2086618ee21abd8a6b48b263997
+r
+Bapp/src/main/java/com/lee/myapp/data/repository/MovieDataSource.kt,9\7\9782bb82996802d32c01136d836e0850dbf78de5

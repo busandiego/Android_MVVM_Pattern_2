@@ -27,7 +27,7 @@ interface TheMovieDBInterface {
 
 
     // 파라미터가 필요함 왜냐하면 페이지 번호를 알아야하기 때문이다.
-    @GET("movies/popular")
+    @GET("movie/popular")
     fun getPopularMovie(@Query("page") page: Int): Single<MovieResponse>
 
 

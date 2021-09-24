@@ -17,6 +17,8 @@ import com.lee.myapp.data.api.POSTER_BASE_URL
 import com.lee.myapp.data.repository.NetworkState
 import com.lee.myapp.data.vo.Movie
 import com.lee.myapp.ui.single_movie_details.SingleMovie
+import kotlinx.android.synthetic.main.activity_single_movie.view.*
+import kotlinx.android.synthetic.main.movie_list_item.view.*
 
 class PopularMoviePagedListAdapter(public val context: Context) :
     PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
@@ -81,8 +83,13 @@ class PopularMoviePagedListAdapter(public val context: Context) :
     class MovieItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun bind(movie: Movie?, context: Context) {
-            itemView.findViewById<TextView>(R.id.cv_movie_title).text = movie?.title
-            itemView.findViewById<TextView>(R.id.movie_release_date).text = movie?.releaseDate
+          //  itemView.cv_movie_title
+
+            itemView.cv_movie_title.text = movie?.title
+            // itemView.findViewById<TextView>(R.id.cv_movie_title).text = movie?.title
+
+            itemView.movie_release_date.text = movie?.releaseDate
+            // itemView.findViewById<TextView>(R.id.movie_release_date).text = movie?.releaseDate
 
             val moviePosterURL: String = POSTER_BASE_URL + movie?.posterPath
             Glide.with(itemView.context)
