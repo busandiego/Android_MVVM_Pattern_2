@@ -2,6 +2,7 @@ package com.lee.myapp.ui.popular_movie
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,8 +21,11 @@ import com.lee.myapp.ui.single_movie_details.SingleMovie
 import kotlinx.android.synthetic.main.activity_single_movie.view.*
 import kotlinx.android.synthetic.main.movie_list_item.view.*
 
-class PopularMoviePagedListAdapter(public val context: Context) :
+private const val TAG = "PopularMoviePagedListAd"
+
+class PopularMoviePagedListAdapter(val context: Context) :
     PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
+
 
     val MOVIE_VIEW_TYPE = 1
     val NETWORK_VIEW_TYPE = 2
@@ -85,8 +89,12 @@ class PopularMoviePagedListAdapter(public val context: Context) :
         fun bind(movie: Movie?, context: Context) {
           //  itemView.cv_movie_title
             itemView.cv_movie_title.text = movie?.title
-            // itemView.movie_release_date.text = movie?.releaseDate
 
+
+            Log.d(TAG, "bind: >>>>>>>>> ${movie?.title}")
+            Log.d(TAG, "bind: >>>>>>>>> ${movie?.releaseDate}")
+            // itemView.movie_release_date.text = movie?.releaseDate
+           // itemView.movie_release_date.text = movie?.title
 
             val moviePosterURL: String = POSTER_BASE_URL + movie?.posterPath
             Glide.with(itemView.context)
